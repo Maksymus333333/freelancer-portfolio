@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/freelancer-portfolio/static/css/main.3eb5fd20.css",
+    "main.js": "/freelancer-portfolio/static/js/main.34930139.js",
+    "static/js/787.e6e926a2.chunk.js": "/freelancer-portfolio/static/js/787.e6e926a2.chunk.js",
+    "static/media/ResumePDF.pdf": "/freelancer-portfolio/static/media/ResumePDF.77031ff8bd935b2d18ec.pdf",
+    "static/media/comp.png": "/freelancer-portfolio/static/media/comp.4bfd96dec85769b2e583.png",
+    "static/media/gameballfhone.jpg": "/freelancer-portfolio/static/media/gameballfhone.097ac71fdc082d2e0e95.jpg",
+    "static/media/boczka.jpg": "/freelancer-portfolio/static/media/boczka.f489d57e716902042a88.jpg",
+    "static/media/biog.jpg": "/freelancer-portfolio/static/media/biog.e82fbed719bd94100fc7.jpg",
+    "static/media/shopmar.jpg": "/freelancer-portfolio/static/media/shopmar.eefcae1ff8e1ba900371.jpg",
+    "static/media/figma1.jpg": "/freelancer-portfolio/static/media/figma1.c013bbd7b58d68162446.jpg",
+    "static/media/ball.jpg": "/freelancer-portfolio/static/media/ball.936abb6ac40d01bca6c4.jpg",
+    "static/media/sun.svg": "/freelancer-portfolio/static/media/sun.4d47962acd6c83e7e7aca592ec39545f.svg",
+    "static/media/moon.svg": "/freelancer-portfolio/static/media/moon.829f022e764b1d37016e364c5447dfdb.svg",
+    "static/media/gitHub.svg": "/freelancer-portfolio/static/media/gitHub.db1e3cfa3aa61658d837d82e113dc1fe.svg",
+    "static/media/instagram.svg": "/freelancer-portfolio/static/media/instagram.c877a8275355fec38548544a6d0ab3b4.svg",
+    "static/media/linkedIn.svg": "/freelancer-portfolio/static/media/linkedIn.c05a2ae5b158581b0f27510e1d79e379.svg",
+    "index.html": "/freelancer-portfolio/index.html",
+    "static/media/facebook.svg": "/freelancer-portfolio/static/media/facebook.2452c4d4e3cb22df427861af0b5b3c18.svg",
+    "main.3eb5fd20.css.map": "/freelancer-portfolio/static/css/main.3eb5fd20.css.map",
+    "main.34930139.js.map": "/freelancer-portfolio/static/js/main.34930139.js.map",
+    "787.e6e926a2.chunk.js.map": "/freelancer-portfolio/static/js/787.e6e926a2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3eb5fd20.css",
+    "static/js/main.34930139.js"
+  ]
+}
