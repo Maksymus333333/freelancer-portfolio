@@ -16,6 +16,17 @@
 	color: var(--header-text);
 	text-align: center;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
 
 .header__wrapper {
 	padding: 0 15px;

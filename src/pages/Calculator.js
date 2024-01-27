@@ -6,7 +6,6 @@ const Calculator = () => {
   const [modelingHours, setModelingHours] = useState();
   const [gamedevHours, setGamedevHours] = useState();
   const [totalCost, setTotalCost] = useState();
-  const [darkMode, setDarkMode] = useState(false);
 
   const calculateTotalCost = (e) => {
     e.preventDefault();
@@ -25,11 +24,11 @@ const Calculator = () => {
   };
 
   const handleDarkModeToggle = () => {
-    setDarkMode(!darkMode);
+    // Додайте функціонал зміни теми за вашим вибором
   };
 
   return (
-    <main className={`section ${darkMode ? 'dark' : ''}`}>
+    <main className="section">
       <div className="container" style={{ textAlign: 'center' }}>
         <h2 className="title-1">Service Rate Calculator</h2>
 
@@ -37,7 +36,7 @@ const Calculator = () => {
           <table style={{ margin: '0 auto' }}>
             <tbody>
               <tr>
-                <td className="service-cell" style={{ border: `1px solid ${darkMode ? 'white' : 'black'}`, padding: '1px' }}>
+                <td className="service-cell" style={{ border: '1px solid black', padding: '1px' }}>
                   <label htmlFor="createwebHours" className="service-label">
                     <h2 className="title-2">Creating a website (Rate: $30/hr):</h2>
                     <input
@@ -54,7 +53,7 @@ const Calculator = () => {
                 </td>
               </tr>
               <tr>
-                <td className="service-cell" style={{ border: `1px solid ${darkMode ? 'white' : 'black'}`, padding: '1px' }}>
+                <td className="service-cell" style={{ border: '1px solid black', padding: '1px' }}>
                   <label htmlFor="webdesignHours" className="service-label">
                     <h2 className="title-2">Website design (Rate: $20/hr):</h2>
                     <input
@@ -71,7 +70,7 @@ const Calculator = () => {
                 </td>
               </tr>
               <tr>
-                <td className="service-cell" style={{ border: `1px solid ${darkMode ? 'white' : 'black'}`, padding: '1px' }}>
+                <td className="service-cell" style={{ border: '1px solid black', padding: '1px' }}>
                   <label htmlFor="gameHours" className="service-label">
                     <h2 className="title-2">Gaming development (Rate: $40/hr):</h2>
                     <input
@@ -88,7 +87,7 @@ const Calculator = () => {
                 </td>
               </tr>
               <tr>
-                <td className="service-cell" style={{ border: `1px solid ${darkMode ? 'white' : 'black'}`, padding: '1px' }}>
+                <td className="service-cell" style={{ border: '1px solid black', padding: '1px' }}>
                   <label htmlFor="modelingHours" className="service-label">
                     <h2 className="title-2">Modeling (Rate: $25/hr):</h2>
                     <input
