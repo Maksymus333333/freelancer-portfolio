@@ -1,0 +1,73 @@
+.Cont-form {
+    max-width: 300px; /* Зменшена ширина форми */
+    width: 100%;
+    margin: 0 auto; /* Вирівнюємо по центру */
+  }
+  
+  .Cont-form input,
+  .Cont-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Зменшені розміри меж */
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .Cont-form label {
+    display: block;
+    margin-bottom: 8px; /* Зменшені розміри меж */
+  }
+  
+  .Cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .Cont button {
+    display: inline-block;
+    height: 48px;
+    padding: 12px 28px;
+    border-radius: 5px;
+    background-color: var(--accent);
+    color: var(--white);
+    letter-spacing: 0.15px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: opacity 0.2s ease-in;
+    margin-top: 10px; /* Якщо потрібен відступ від інших елементів у .Cont */
+  }
+  
+  .Cont button:hover {
+    opacity: 0.8;
+  }
+  
+  .Cont button:active {
+    position: relative;
+    top: 1px;
+  }
+  .success-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: var(--accent); /* Використовуйте той самий колір, що і у кнопці */
+    color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  
+  .success-popup button {
+    background-color: var(--white);
+    color: var(--accent); /* Використовуйте той самий колір, що і у кнопці */
+    border: none;
+    padding: 8px 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
