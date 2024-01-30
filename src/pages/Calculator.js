@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
 const Calculator = () => {
-  const [createwebHours, setCreatewebHours] = useState();
-  const [webdesignHours, setWebdesignHours] = useState();
-  const [modelingHours, setModelingHours] = useState();
-  const [gamedevHours, setGamedevHours] = useState();
-  const [totalCost, setTotalCost] = useState();
+  const [createwebHours, setCreatewebHours] = useState('');
+  const [webdesignHours, setWebdesignHours] = useState('');
+  const [modelingHours, setModelingHours] = useState('');
+  const [gamedevHours, setGamedevHours] = useState('');
+  const [totalCost, setTotalCost] = useState('');
 
   const calculateTotalCost = (e) => {
     e.preventDefault();
@@ -16,16 +16,24 @@ const Calculator = () => {
     const gamedevprice = 40;
 
     const total =
-      createwebHours * createwebprice +
-      webdesignHours * webdesignprice +
-      modelingHours * modelingprice +
-      gamedevHours * gamedevprice;
-    setTotalCost(total.toFixed());
+      parseFloat(createwebHours) * createwebprice +
+      parseFloat(webdesignHours) * webdesignprice +
+      parseFloat(modelingHours) * modelingprice +
+      parseFloat(gamedevHours) * gamedevprice;
+
+    setTotalCost(total.toFixed(2));
   };
 
+  const handleChangeHours = (value, setter) => {
+    const parsedValue = parseFloat(value);
+    if (!isNaN(parsedValue) && parsedValue >= 0) {
+      setter(parsedValue.toString());
+    }
+  };
   const handleDarkModeToggle = () => {
     // Додайте функціонал зміни теми за вашим вибором
   };
+
 
   return (
     <main className="section">
@@ -45,7 +53,7 @@ const Calculator = () => {
                       id="createwebHours"
                       placeholder="Hours"
                       value={createwebHours}
-                      onChange={(e) => setCreatewebHours(Math.max(0, Number(e.target.value)))}
+                      onChange={(e) => handleChangeHours(e.target.value, setCreatewebHours)}
                       required
                       style={{ width: '100px', marginLeft: '10px', textAlign: 'center' }}
                     />
@@ -62,9 +70,9 @@ const Calculator = () => {
                       id="webdesignHours"
                       placeholder="Hours"
                       value={webdesignHours}
-                      onChange={(e) => setWebdesignHours(Math.max(0, Number(e.target.value)))}
+                      onChange={(e) => handleChangeHours(e.target.value, setWebdesignHours)}
                       required
-                      style={{ width: '100px', marginLeft: '10px',  textAlign: 'center' }}
+                      style={{ width: '100px', marginLeft: '10px', textAlign: 'center' }}
                     />
                   </label>
                 </td>
@@ -79,7 +87,7 @@ const Calculator = () => {
                       id="gameHours"
                       placeholder="Hours"
                       value={gamedevHours}
-                      onChange={(e) => setGamedevHours(Math.max(0, Number(e.target.value)))}
+                      onChange={(e) => handleChangeHours(e.target.value, setGamedevHours)}
                       required
                       style={{ width: '100px', marginLeft: '10px', textAlign: 'center' }}
                     />
@@ -96,9 +104,9 @@ const Calculator = () => {
                       id="modelingHours"
                       placeholder="Hours"
                       value={modelingHours}
-                      onChange={(e) => setModelingHours(Math.max(0, Number(e.target.value)))}
+                      onChange={(e) => handleChangeHours(e.target.value, setModelingHours)}
                       required
-                      style={{ width: '100px', marginLeft: '10px',  textAlign: 'center' }}
+                      style={{ width: '100px', marginLeft: '10px', textAlign: 'center' }}
                     />
                   </label>
                 </td>
