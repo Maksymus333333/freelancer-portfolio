@@ -87,4 +87,8 @@
 	.nav-list {
 		margin-left: auto;  
 	}
+	
+	.nav-list__item {
+		margin-right: 20px;  
+	}
 }
